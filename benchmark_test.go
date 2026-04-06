@@ -40,6 +40,7 @@ var sampleParagraphs = []string{
 	"Claim #12345 filed by Daniel Rodriguez, DOB: 05/20/1980, SSN: 123-45-6789. Contact information: drodriguez@insurance.com, (555) 210-9876. Incident location: 345 Accident Avenue, Phoenix, AZ 85001. Policy paid via credit card 4123 4567 8901 2345. Adjuster: Lisa Chen at lchen@insuranceco.com.",
 }
 
+
 // BenchmarkParagraphDeidentification benchmarks the deidentification of paragraphs containing PII
 func BenchmarkParagraphDeidentification(b *testing.B) {
 	d := NewDeidentifier("benchmark-secret-key")
